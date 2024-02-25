@@ -334,7 +334,7 @@ or use OPENCV4NODEJS_* env variable.`);
                 ...OPENCV4NODEJS_DEFINES
             ],
             "cStandard": "c11",
-            "cppStandard": "c++11",
+            "cppStandard": "c++20",
             // "compilerArgs": [ "-std=c++11" ]
         };
         if (process.platform === 'win32') {
