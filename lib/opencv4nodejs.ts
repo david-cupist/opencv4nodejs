@@ -1,6 +1,6 @@
 import { type OpenCVBuildEnvParams } from '@u4/opencv-build';
 import promisify from './promisify.js';
-import extendWithJsSources from './src';
+// import extendWithJsSources from './src';
 import { getOpenCV } from './cvloader.js';
 import type * as openCV from '..';
 declare type OpenCVType = typeof openCV;
@@ -16,7 +16,7 @@ function loadOpenCV(opt?: OpenCVBuildEnvParams): OpenCVType {
   
   // promisify async methods
   let cvObj = promisify<OpenCVType>(cvBase);
-  cvObj = extendWithJsSources(cvObj);
+//   cvObj = extendWithJsSources(cvObj);
   // add xmodules alias if not present (moved to C++ part)
   // if (!cvObj.xmodules && cvObj.modules)
   //  cvObj.xmodules = cvObj.modules
