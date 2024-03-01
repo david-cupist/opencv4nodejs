@@ -90,6 +90,8 @@
     "lib/**/*.js",
     "lib/**/*.d.ts",
     "lib/**/*.map",
+    "lib/src/**/*.js",
+    "lib/src/**/*.d.ts",
     "bin/*.js",
     "typings",
     "binding.gyp",

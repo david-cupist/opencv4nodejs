@@ -3,13 +3,13 @@
     "target": "ES2019",
     "module": "commonjs",
     "strict": false,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "declarationMap": true,
   },
-  //"files": [ "./install/install.ts", "./install/parseEnv.ts" ]
-  "include": [ "./install/*.ts", "./lib/**/*.ts" ]
+//   "files": [ "./install/install.ts", "./install/parseEnv.ts" ],
+  "include": [ "./install/*.ts", "./lib/**/*.ts", "./lib/src/**/*.ts" ]
 }
